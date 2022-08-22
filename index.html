@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Select_Favourite_Five_Football Player</title>
+    <title>Select_Favourite_Five_Football Players</title>
     <!-- google font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@300;400;500;600;700&display=swap"
@@ -131,7 +131,7 @@
             <h1
               class="font-berkshireSwash text-orange lg:text-6xl md:text-5xl text-3xl capitalize"
             >
-              Select Your Favourite Five Football Player
+              Select Your Favourite Five Football Players
             </h1>
             <p class="text-center text-white md:mt-10 mt-5 lg:px-16 sm:px-10 md:px-0">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -451,15 +451,15 @@
 
           <!-- select five player and total calculation start-->
           <div
-            class="grid col-span-1 border-black shadow-md shadow-gray-600 rounded-md text-white bg-[#0000007a] my-10 md:my-0"
+            class="grid col-span-1 py-10 border-black shadow-md shadow-gray-600 rounded-md text-white bg-[#0000007a] my-10 md:my-0"
           >
             <!-- 1 -->
             <div class="shadow-xl rounded-lg px-6">
-              <div class="py-10 h-[340px]">
+              <div class=" h-[340px]">
                 <h3
                   class="text-center text-2xl font-bold border-b-2 border-orange w-3/4 m-auto pb-3"
                 >
-                  Select - V
+                  Select - <span id="total-players">0</span>
                 </h3>
                 <ol id="player-list" class="py-5 list-decimal list-inside"></ol>
               </div>
@@ -473,7 +473,7 @@
                   <div class="flex items-center">
                     <span class="w-5/12 font-semibold">per player</span>
                     <input
-                      id="per-player"
+                      id="per-player" placeholder="00"
                       type="text"
                       class="py-3 border-2 border-black rounded-sm w-7/12 outline-none px-2 text-black"
                     />
@@ -486,14 +486,16 @@
                   </button>
                   <div class="flex justify-between items-center mb-5">
                     <span class=" font-semibold">Player Expenses :</span>
-                    <span id="player-expenses" class="font-semibold"
-                      >$00</span
+                    <span class="font-semibold">$
+                      <span id="player-expenses" 
+                      >00</span
                     >
+                    </span>
                   </div>
                   <div class="flex items-center my-3">
                     <span class="w-5/12 font-semibold">Manager</span>
                     <input
-                      id="manager-input"
+                      id="manager-input" placeholder="00"
                       type="text"
                       class="py-3 border-2 border-black rounded-sm w-7/12 outline-none px-2 text-black"
                     />
@@ -501,7 +503,7 @@
                   <div class="flex items-center my-3">
                     <span class="w-5/12 font-semibold">Coach</span>
                     <input
-                      id="coach-input"
+                      id="coach-input" placeholder="00"
                       type="text"
                       class="py-3 border-2 border-black rounded-sm w-7/12 outline-none px-2 text-black"
                     />
@@ -514,9 +516,11 @@
                   </button>
                   <div class="flex justify-between items-center">
                     <span class="font-semibold">Total</span>
-                    <span id="total-cost" class="text-orange font-semibold"
-                      >$00</span
+                    <span class="text-orange font-semibold">$
+                      <span id="total-cost" 
+                      >00</span
                     >
+                    </span>
                   </div>
                 </div>
               </div>

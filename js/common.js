@@ -15,7 +15,7 @@ function inputValue(id) {
 //set total calculated value
 function setValue(id, total) {
   let element = document.getElementById(id);
-  element.innerText = `$${total}`;
+  element.innerText = `${total}`;
 }
 
 //total player expenses

@@ -8,9 +8,12 @@ for (let selectBtn of selectBtns) {
     div.innerHTML = `
     <li class="text-lg mb-3">${playerName}</li>`;
 
+
     let totalPlayer = totalChildren();
+   
     if (totalPlayer < 5) {
       ol.appendChild(div);
+      setValue('total-players',totalPlayer+1)
     } else {
       return alert("You can't select more than five players");
     }
