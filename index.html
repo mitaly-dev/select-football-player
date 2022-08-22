@@ -396,17 +396,20 @@
                   </div>
                   <button
                     id="calculate"
-                    class="buy-btn w-full p-2 my-5 text-white text-md rounded-lg outline-none bg-black hover:bg-sky-700"
+                    class="buy-btn w-full p-2 my-5 text-md rounded-lg outline-none bg-amber-500"
                   >
                     Calculate
                   </button>
                   <div class="flex items-center mb-5">
                     <span class="w-8/12 font-semibold">Player Expenses :</span>
-                    <span class="w-4/12 font-semibold">5000</span>
+                    <span id="player-expenses" class="w-4/12 font-semibold"
+                      >$00</span
+                    >
                   </div>
                   <div class="flex items-center my-3">
                     <span class="w-5/12 font-semibold">Manager</span>
                     <input
+                      id="manager-input"
                       type="text"
                       class="py-3 border-2 border-black rounded-sm w-7/12 outline-none px-2 text-black"
                     />
@@ -414,18 +417,22 @@
                   <div class="flex items-center my-3">
                     <span class="w-5/12 font-semibold">Coach</span>
                     <input
+                      id="coach-input"
                       type="text"
                       class="py-3 border-2 border-black rounded-sm w-7/12 outline-none px-2 text-black"
                     />
                   </div>
                   <button
-                    class="buy-btn w-full p-2 my-5 text-white text-md rounded-lg outline-none bg-black hover:bg-sky-700"
+                    id="calculate-total"
+                    class="buy-btn w-full p-2 my-5 text-md rounded-lg outline-none bg-amber-500"
                   >
                     Calculate Total
                   </button>
                   <div class="flex justify-between items-center">
                     <span class="font-semibold">Total</span>
-                    <span class="text-orange font-semibold">5000</span>
+                    <span id="total-cost" class="text-orange font-semibold"
+                      >$00</span
+                    >
                   </div>
                 </div>
               </div>
