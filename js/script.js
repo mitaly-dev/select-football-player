@@ -1,3 +1,5 @@
+//add favourit five players
+
 let selectBtns = document.querySelectorAll("#card-btn");
 for (let selectBtn of selectBtns) {
   selectBtn.addEventListener("click", function (event) {
@@ -13,11 +15,14 @@ for (let selectBtn of selectBtns) {
     } else {
       return alert("You can't add more than five players");
     }
+    selectBtn.setAttribute("disabled", true);
+    selectBtn.style.background = "#4c660b";
+    selectBtn.innerText = "Selected ✔️";
   });
 }
 
-function totalChildren() {
-  let ol = document.getElementById("player-list");
-  let totalChildren = ol.children;
-  return totalChildren.length;
+
+//calculate
+document.getElementById('calculate').addEventListener('click'){
+let perPlayer=inputValue('per-player')
 }
