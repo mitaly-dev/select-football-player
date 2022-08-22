@@ -20,7 +20,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- daiusy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -40,7 +45,7 @@
       };
     </script>
   </head>
-  <body class="bg-background">
+  <body class="bg-background font-manrope">
     <header>
       <section id="banner" class="bg-black">
         <div class="flex justify-between items-center h-[90vh] pr-28">
@@ -379,30 +384,51 @@
           <!-- calculation -->
           <div class="grid col-span-1">
             <!-- 1 -->
-            <div class="card w-full bg-base-100 shadow-xl rounded-lg mb-10">
-              <figure class="h-3/4">
-                <img
-                  class="h-[200px] object-cover w-full"
-                  src="./images/player1.png"
-                  alt="Shoes"
-                />
-              </figure>
-              <div class="card-body px-5">
-                <h2 class="card-title font-semibold text-2xl capitalize">
-                  Lionel Messi
-                </h2>
-                <p class="text-xl font-bold py-2">
-                  Price : $<span id="price">5435</span>
-                </p>
-                <button
-                  id="card-btn"
-                  class="buy-btn p-2 py-3 text-white text-md rounded-lg outline-none bg-sky-900 hover:bg-sky-700"
-                ></button>
+            <div
+              class="card w-full bg-base-100 shadow-xl rounded-lg mb-10 py-10"
+            >
+              <div class="text-center">
+                <h3 class="text-2xl font-bold">Select - V</h3>
+                <ol class="list-item">
+                  <li>so-1</li>
+                  <li>so-2</li>
+                  <li>so-3</li>
+                  <li>so-4</li>
+                  <li>so-5</li>
+                </ol>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <!-- footer section start -->
+    <footer
+      class="footer footer-center p-10 bg-slate-900 text-base-content rounded text-white mt-24 py-16"
+    >
+      <div class="grid grid-flow-col gap-4">
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </div>
+      <div>
+        <div class="grid grid-flow-col gap-4">
+          <a href="#"
+            ><i class="fa-brands fa-twitter text-white text-2xl"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-square-youtube text-white text-2xl"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-facebook-f text-white text-2xl"></i
+          ></a>
+        </div>
+      </div>
+      <div>
+        <p>Copyright © 2022 - All right reserved by Mitaly</p>
+      </div>
+    </footer>
+    <!-- footer section end -->
   </body>
 </html>
