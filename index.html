@@ -49,88 +49,99 @@
     <!-- header section start -->
     <header>
       <!-- navbar section start -->
-      <div class="navbar bg-base-100">
-        <div class="flex-1">
-          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-        </div>
-        <div class="flex-none">
-          <div class="dropdown dropdown-end">
+      <div class="navbar bg-black md:px-24">
+        <div class="navbar-start">
+          <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost btn-circle">
-              <div class="indicator">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-                <span class="badge badge-sm indicator-item">8</span>
-              </div>
-            </label>
-            <div
-              tabindex="0"
-              class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
-            >
-              <div class="card-body">
-                <span class="font-bold text-lg">8 Items</span>
-                <span class="text-info">Subtotal: $999</span>
-                <div class="card-actions">
-                  <button class="btn btn-primary btn-block">View cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="dropdown dropdown-end">
-            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-              <div class="w-10 rounded-full">
-                <img src="https://placeimg.com/80/80/people" />
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="#fff"
+                viewBox="0 0 24 24"
+                stroke="#fff"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
             </label>
             <ul
               tabindex="0"
               class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
-                <a class="justify-between">
-                  Profile
-                  <span class="badge">New</span>
-                </a>
-              </li>
-              <li><a>Settings</a></li>
-              <li><a>Logout</a></li>
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
             </ul>
           </div>
+        </div>
+        <div class="navbar-center"></div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#fff"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#fff"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                />
+              </svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button>
         </div>
       </div>
       <!-- navbar section end -->
 
       <!-- banner section start -->
       <section id="banner" class="bg-black">
-        <div class="flex justify-between items-center h-[90vh] pr-28">
-          <div>
-            <div class="absolute bottom-11">
-              <img src="./images/banner.png" alt="" class="w-full" />
-            </div>
+        <div class="md:grid grid-cols-4 h-[80vh] text-center">
+          <div class="col-span-1 mt-auto hidden md:block">
+            <img src="./images/banner.png" alt="" class="w-full" />
           </div>
-          <div class="text-center ml-48 px-36">
-            <h1 class="font-berkshireSwash text-orange text-6xl capitalize">
+          <div
+            class="text-center my-auto px-10 lg:px-0 col-span-2 pt-10 lg:pt-0"
+          >
+            <h1
+              class="font-berkshireSwash text-orange lg:text-6xl md:text-5xl text-3xl capitalize"
+            >
               Select Your Favourit Five Football Player
             </h1>
-            <p class="text-center text-white mt-10">
+            <p class="text-center text-white md:mt-10 mt-5 sm:px-10 md:px-0">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
           </div>
-          <div class=" ">
-            <img src="./images/teamlogo.png" alt="" />
+          <div class="col-span-1">
+            <img class="w-2/4 sm:w-1/3" src="./images/teamlogo.png" alt="" />
+            <img class="ml-auto mt-auto" src="./images/football.png" alt="" />
           </div>
         </div>
       </section>
@@ -138,17 +149,20 @@
     </header>
     <!-- header section end -->
 
-    <main class="px-24 mt-20">
+    <main class="lg:px-24 md:px-16 px-10 mt-20">
       <section id="players">
-        <div class="container grid grid-cols-4 gap-5">
-          <div class="grid col-span-3 grid-cols-3 gap-5">
+        <div class="container md:grid lg:grid-cols-4 md:grid-cols-3 gap-5">
+          <!--all players start -->
+          <div
+            class="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 lg:col-span-3 md:col-span-2 gap-5"
+          >
             <!-- 1 -->
             <div
               class="card border p-2 bg-white border-slate-100 rounded-lg w-full bg-base-100 shadow-lg shadow-slate-700"
             >
               <figure class="">
                 <img
-                  class="object-cover w-full h-[200px]"
+                  class="object-cover w-full md:h-[200px]"
                   src="./images/player1.png"
                   alt="Shoes"
                 />
@@ -182,7 +196,7 @@
             >
               <figure class="">
                 <img
-                  class="object-cover w-full h-[200px]"
+                  class="object-cover w-full md:h-[200px]"
                   src="./images/player2.png"
                   alt="Shoes"
                 />
@@ -214,7 +228,7 @@
             >
               <figure class="">
                 <img
-                  class="object-cover w-full h-[200px]"
+                  class="object-cover w-full md:h-[200px]"
                   src="./images/player7.jpg"
                   alt="Shoes"
                 />
@@ -246,7 +260,7 @@
             >
               <figure class="">
                 <img
-                  class="object-cover w-full h-[200px]"
+                  class="object-cover w-full md:h-[200px]"
                   src="./images/player8.jpg"
                   alt="Shoes"
                 />
@@ -278,7 +292,7 @@
             >
               <figure class="">
                 <img
-                  class="object-cover w-full h-[200px]"
+                  class="object-cover w-full md:h-[200px]"
                   src="./images/player9.jpg"
                   alt="Shoes"
                 />
@@ -310,7 +324,7 @@
             >
               <figure class="">
                 <img
-                  class="object-cover w-full h-[200px]"
+                  class="object-cover w-full md:h-[200px]"
                   src="./images/player3.png"
                   alt="Shoes"
                 />
@@ -342,7 +356,7 @@
             >
               <figure class="">
                 <img
-                  class="object-cover w-full h-[200px]"
+                  class="object-cover w-full md:h-[200px]"
                   src="./images/player4.png"
                   alt="Shoes"
                 />
@@ -374,7 +388,7 @@
             >
               <figure class="">
                 <img
-                  class="object-cover w-full h-[200px]"
+                  class="object-cover w-full md:h-[200px]"
                   src="./images/player5.png"
                   alt="Shoes"
                 />
@@ -406,7 +420,7 @@
             >
               <figure class="">
                 <img
-                  class="object-cover w-full h-[200px]"
+                  class="object-cover w-full md:h-[200px]"
                   src="./images/player6.png"
                   alt="Shoes"
                 />
@@ -433,9 +447,11 @@
               </div>
             </div>
           </div>
+          <!--all players end -->
+
           <!-- select five player and total calculation start-->
           <div
-            class="grid col-span-1 border-black shadow-md shadow-gray-600 rounded-md text-white bg-[#0000007a]"
+            class="grid col-span-1 border-black shadow-md shadow-gray-600 rounded-md text-white bg-[#0000007a] my-10 md:my-0"
           >
             <!-- 1 -->
             <div class="shadow-xl rounded-lg px-6">
@@ -506,7 +522,7 @@
               </div>
             </div>
           </div>
-          <!-- select five player and total calculation start-->
+          <!-- select five player and total calculation end-->
         </div>
       </section>
       <!-- player section end -->
@@ -514,7 +530,7 @@
 
     <!-- footer section start -->
     <footer
-      class="footer footer-center p-10 bg-black text-base-content rounded text-white mt-24 py-16"
+      class="footer footer-center p-10 bg-black text-base-content rounded text-white py-16 md:mt-20"
     >
       <div class="grid grid-flow-col gap-4">
         <a class="link link-hover">About us</a>
