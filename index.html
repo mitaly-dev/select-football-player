@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            orange:'#FF5E19',
+            background:'#CFCFCF'
+          }
+          ,
+          fontFamily:{
+            berkshireSwash:['Berkshire Swash','cursive'],
+            manrope:['Manrope','sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background">
+    <header>
+        <section id="banner" class="bg-black">
+            <div class="flex justify-between items-center h-[90vh] pr-28">
+                <div>
+                    <div class="absolute bottom-11">
+                        <img src="./images/banner.png" alt="" class="w-full">
+                    </div>
+                </div>
+                <div class="text-center ml-48">
+                    <h1 class="font-berkshireSwash text-orange text-6xl capitalize">best five football player</h1>
+                    <p class="text-center text-white px-48 mt-10">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class=" ">
+                    <img src="./images/teamlogo.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="px-28 mt-20">
+        <section>
+            <div class="grid grid-cols-3">
+              <!-- 1 -->
+              <div class="card w-full bg-base-100 shadow-xl rounded-lg mb-10">
+                <figure class="h-3/4">
+                  <img class="h-[200px] object-cover w-full" src="./images/player1.png" alt="Shoes" />
+                </figure>
+                <div class="card-body px-5">
+                  <h2 class="card-title font-semibold text-2xl capitalize">Lionel Messi</h2>
+                  <p class="text-xl font-bold py-2">
+                    Price : $<span id="price">5435</span>
+                  </p>
+                  <button id="card-btn"
+                  class="buy-btn p-2 py-3  text-white text-md rounded-lg outline-none bg-sky-900 hover:bg-sky-700"
+                >
+                  Buy Now
+                </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              
+            </div>
+        </section>
+    </main>
+</body>
+</html>
